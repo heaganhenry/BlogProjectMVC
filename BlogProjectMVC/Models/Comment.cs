@@ -32,7 +32,7 @@ namespace BlogProjectMVC.Models
 
 		// Navigation properties
 		public virtual Post Post { get; set; }
-		public virtual IdentityUser Author { get; set; }
-		public virtual IdentityUser Moderator { get; set; }
+		public virtual BlogUser Author { get; set; }
+		public virtual BlogUser Moderator { get; set; }
 	}
 }
