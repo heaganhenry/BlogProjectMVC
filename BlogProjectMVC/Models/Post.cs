@@ -4,6 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
+using BlogProjectMVC.Enums;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 
@@ -31,7 +32,7 @@ namespace BlogProjectMVC.Models
 		[Display(Name = "Updated Date")]
 		public DateTime? Updated { get; set; }
 
-		public bool IsReady { get; set; }
+		public PostStatus PostStatus { get; set; }
 
 		public string Slug { get; set; }
 
